@@ -96,15 +96,12 @@ function displayTable(){
 }
 
 form.addEventListener("submit", (msg) => {
-    let x= !terms.checked;
+    let x=!terms.checked;
     msg.preventDefault();
     if (!x) {
         let obj = makeObject();
         entry.push(obj);
         localStorage.setItem("entry", JSON.stringify(entry));
-    }
-    else{
-        error(terms,error_terms,terms.checked);
     }
     displayTable();
 });
