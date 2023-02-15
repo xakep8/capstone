@@ -13,8 +13,7 @@ let uname=element("name"),
     password=element("password"),
     dob=element("dob"),
     terms=element("terms"),
-    form=element("form")
-    submit=element("submit");
+    form=element("form");
 
 function fillTable(){
     let obj = localStorage.getItem("entry");
